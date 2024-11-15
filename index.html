@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            
+        }
+        .navbar{
+            width: 100vw;
+            height: 60px;
+            background-color: rgb(162, 38, 211);
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .logo{
+            display: flex;
+            color: beige;
+            gap: 10px;
+            margin: 5px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            position: absolute;
+            left: 10px;
+        }
+        #p1{
+            font-size: 20px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        #p2{
+            font-size: 16px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(238, 82, 147);
+        }
+        .pages{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* gap: 50px; */
+            /* margin-left: 200px; */
+            font-size: 12px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            position: absolute;
+            animation-name: move3;
+             animation-duration: 2s;
+             animation-iteration-count: 1;
+             animation-fill-mode: forwards;
+
+        }
+        @keyframes move3{
+            from{
+                gap: 0px;
+                font-size: 12px;
+            }
+            to{
+                gap: 50px;
+                font-size: 16px;
+            }
+        }
+        .btn{
+            height: 40px;
+            width: 100px;
+            background-color:  rgb(253, 252, 252);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            color:rgb(238, 82, 147) ;
+            position: absolute;
+            right: 30px;
+            
+            
+            
+        }
+        /* home */
+        .home{
+            width: 100vw;
+            height: 500px;
+            background-color: white;
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .design{
+            height: 200px;
+            width: 250px;
+            position: absolute;
+             left: 10px;
+             display: flex;
+             flex-direction: column;
+             /* background-color: aqua; */
+             /* justify-content: center; */
+             /* align-items: center; */
+             top: 120px;
+             padding: 10px;
+             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+             font-size: 22px;
+             font-weight:bold;
+             text-align: justify;
+             color:  rgb(238, 82, 147);
+             animation-name: move;
+             animation-duration: 2s;
+             animation-iteration-count: 1;
+             animation-fill-mode: forwards;
+
+        }
+        @keyframes move{
+            from{
+                left: 10px;
+            }
+            to{
+                left: 130px;
+            }
+        }
+        .pic{
+            height: 300px;
+            width: 400px;
+            /* background-color: aqua; */
+            position: absolute;
+            background-image: url("../ali.jpg");
+            background-size: cover;
+            
+        }
+        .develop{
+            /* height: 30px;
+            width: 30px;
+            background-color: aqua;
+            position: absolute;
+            right: 10px; */
+            height: 200px;
+            width: 250px;
+            position: absolute;
+             right: 10px;
+             display: flex;
+             flex-direction: column;
+             /* background-color: aqua; */
+             /* justify-content: center; */
+             /* align-items: center; */
+             top: 120px;
+             padding: 10px;
+             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+             font-size: 22px;
+             font-weight:bold;
+             text-align: justify;
+             color:  rgb(238, 82, 147);
+             animation-name: move2;
+             animation-duration: 2s;
+             animation-iteration-count: 1;
+             animation-fill-mode: forwards;
+
+        }
+        @keyframes move2{
+            from{
+                right: 10px;
+            }
+            to{
+                right: 90px;
+            }
+        }
+        #contact{
+            height: 40px;
+            width: 100px;
+            background-color: rgb(162, 38, 211) ;
+            border-radius: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        /* //about */
+        .about{
+            height: 300px;
+            width: 100vw;
+            background-color: white;
+            justify-content: center;
+            display: flex;
+            align-items:center;
+            /* flex-direction: column; */
+            position: relative;
+            border-top: 1px solid  rgb(162, 38, 211);
+            
+        }
+        .me{
+            position: absolute;
+            top: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            color:  rgb(162, 38, 211);
+        }
+     #side{
+            position: absolute;
+            right: 60px;
+            height: 200px;
+            width: 350px;
+            /* background-color: blueviolet; */
+            align-items: center;
+        }
+        #side .heading{
+            color: rgb(162, 38, 211);
+            height: 11px;
+            width: 100%;
+            /* background-color: black; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* font-weight: bold; */
+        }
+        .us{
+            position: absolute;
+            left: 100px;
+            
+        }
+        .pole{
+            height: 18px;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+       
+        .pole .one{
+            height: 13px;
+            width: 100%;
+            background-color: rgb(162, 38, 211);
+            border-radius: 30px;
+            position: absolute;
+            text-align: end;
+            font-size: 11px;
+            color: white;
+            /* padding: 3px; */
+        }
+        .pole .two{
+            height: 13px;
+            width: 50%;
+            background-color: rgb(144, 184, 51);
+            border-radius: 10px;
+            position: absolute;
+            /* margin: 3px; */
+        }
+        #html{
+            width: 99.2%;
+            background-color:  rgb(238, 82, 147);
+        }
+        #css{
+            width: 95%;
+            background-color:  rgb(238, 82, 147);
+        }
+        #java{
+            width: 85%;
+            background-color:  rgb(238, 82, 147);
+        }
+        #illustrator{
+            width: 75%;
+            background-color:  rgb(238, 82, 147);
+        }
+        #Photoshop{
+            width: 89%;
+            background-color:  rgb(238, 82, 147);
+           
+        }
+        .emji{
+            height: 80px;
+            width: 120px;
+            /* background-color: aqua; */
+            background-image: url("../emoji1.jpg");
+            background-size: cover;
+            margin-bottom: 5px;
+        }
+        .us p{
+            color:  rgb(162, 38, 211) ;
+            text-align: justify;
+        }
+        .us .read{
+            height: 40px;
+            width: 100px;
+            background-color: rgb(238, 82, 147);
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 5px;
+            
+        }
+        .skill{
+            height: 300px;
+            width: 100vw;
+            background-color: white;
+            justify-content: center;
+            display: flex;
+            align-items:center;
+        }
+        
+
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <p id="p1">Developer </p>
+            <p id="p2">Alishu..</p>
+        </div>
+        <div class="pages">
+            <div id="span">Home</div>
+            <div id="span">About</div>
+            <div id="span">My skills</div>
+            <div id="span">Services</div>
+        </div>
+        <div class="btn">
+           <span>Contact Me</span>
+        </div>
+    </div>
+    <!-- //home oage -->
+     <div class="home">
+        <div class="design" id="move">
+            <!-- <p> Hi,</p> -->
+            <p>Hi,<br>I'am Alishba <br>Front-end Developer</p>
+
+                <span id="contact">Contact Me</span>
+             
+        </div>
+        <div class="pic"></div>
+        <div class="develop">
+            <p>Hi There,<br>I'm Alishba <br>Graphic Designer</p>
+
+            <span id="contact">Contact Me</span>
+         
+        </div>
+     </div>
+     <!-- //about -->
+     <div class="about">
+        <div class="me">About Me</div>
+        <div class="us">
+            <div class="emji"></div>
+            <p>As a front-end developer and graphic designer, I <br>specialize in creating visually stunning and user<br>-friendly web interfaces that blend creativity with<br> technical expertise.</p>
+            <div class="read">
+                <span>Read more..</span>
+            </div>
+        </div>
+        <div id="side">
+        <span class="heading">Html</span>
+        <div class="pole">
+            <span class="one"></span>
+            <span class="two" id="html"></span>
+            
+        </div>
+        <span class="heading">Css</span>
+        <div class="pole">
+            <span class="one"></span>
+            <span class="two" id="css"></span>
+        </div>
+        <span class="heading">JavaScript</span>
+        <div class="pole">
+            <span class="one"></span>
+            <span class="two" id="java"></span>
+        </div>
+        <span class="heading">Photoshop</span>
+        <div class="pole"> 
+            <span class="one"></span>
+            <span class="two" id="Photoshop"></span>
+        </div>
+        <span class="heading">illustrator</span>
+        <div class="pole">
+            <span class="one"></span>
+            <span class="two" id="illustrator"></span>
+        </div>
+     </div>
+    </div>
+    <!-- //skill -->
+     <div class="skill">
+        <div class="myskil"></div>
+        <div class="designskil"></div>
+        <div class="webskil"></div>
+     </div>
+
+<script>
+
+</script>
+    
+</body>
+</html>
